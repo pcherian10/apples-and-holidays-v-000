@@ -30,7 +30,6 @@ end
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   holiday_hash.each do |season, holiday_data|
     season[:season] = season
-
     holiday_data.each do |holidays, supplies|
         supplies << supply if(holidays == :memorial_day)
     end
