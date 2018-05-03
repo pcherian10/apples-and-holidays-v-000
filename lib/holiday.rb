@@ -10,7 +10,6 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
     holiday_hash.each do |season, holiday_data|
       holiday_data.each do |holidays, supplies|
         supplies << supply
-        puts supplies
       end
    end
    holiday_hash
