@@ -52,7 +52,7 @@ def all_supplies_in_holidays(holiday_hash)
           holiday = holiday.to_s.split("_")
           holiday = holiday.collect {|holiday| holiday != "of" ? holiday.capitalize : holiday}
           holiday = holiday.join(" ")
-          puts "#{holiday}: #{supplies.join(", ")}"
+          puts "  #{holiday}: #{supplies.join(", ")}"
         end
       end
 
