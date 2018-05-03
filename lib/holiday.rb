@@ -19,13 +19,12 @@ end
 def add_supply_to_memorial_day(holiday_hash, supply)
   # again, holiday_hash is the same as the ones above
   # add the second argument to the memorial day array
-  holiday_hash.each do |season, holiday_data|
-    holiday_data.each do |holidays, supplies|
-      supplies << supply
+    holiday_hash.each do |season, holiday_data|
+      holiday_data.each do |holidays, supplies|
+        supplies << supply
+      end
     end
- end
- holiday_hash
-
+    holiday_hash
 end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
