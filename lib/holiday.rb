@@ -47,7 +47,7 @@ def all_supplies_in_holidays(holiday_hash)
 
     holiday_supplies.each do |season, holiday_data|
         season = season.to_s
-        puts season.capitalize
+        puts season.capitalize+":"
         holiday_data.each do |holiday, supplies|
           holiday = holiday.to_s.split("_")
           holiday = holiday.collect {|holiday| holiday != "of" ? holiday.capitalize : holiday}
